@@ -1,0 +1,24 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.linstar.illusion.client.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ChunkBuilderMeshTaskMixin",
+    "compat.sable.SubLevelContainerMixin"
+  ],
+  "client": [
+    "BlockEntityRenderDispatcherMixin",
+    "BlockStateBaseMixin",
+    "SodiumBlockRendererMixin",
+    "compat.yuushya.ItemBlockModelMixin",
+    "compat.yuushya.ShowBlockModelMixin",
+    "vanilla.SectionCompilerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
