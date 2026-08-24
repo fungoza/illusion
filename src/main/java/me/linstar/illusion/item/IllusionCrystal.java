@@ -26,7 +26,6 @@ import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.network.PacketDistributor;
 import org.jetbrains.annotations.NotNull;
 
-import javax.annotation.Nullable;
 import java.util.List;
 
 public class IllusionCrystal extends Item implements IllusionItem {
@@ -116,7 +115,7 @@ public class IllusionCrystal extends Item implements IllusionItem {
 
 
     @Override
-    public void appendHoverText(@NotNull ItemStack stack, Item.TooltipContext context, List<Component> components, @NotNull TooltipFlag flag) {
+    public void appendHoverText(@NotNull ItemStack stack, Item.@NotNull TooltipContext context, List<Component> components, @NotNull TooltipFlag flag) {
         components.add(Component.translatable("tooltip.illusion.illusion_crystal"));
     }
 }

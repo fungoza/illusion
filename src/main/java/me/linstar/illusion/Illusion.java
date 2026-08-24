@@ -1,8 +1,6 @@
 package me.linstar.illusion;
 
 import com.mojang.logging.LogUtils;
-import dev.ryanhcode.sable.api.sublevel.ServerSubLevelContainer;
-import dev.ryanhcode.sable.api.sublevel.SubLevelContainer;
 import me.linstar.illusion.attachment.IllusionChunkData;
 import me.linstar.illusion.attachment.IllusionChunkDataSerializer;
 import me.linstar.illusion.command.TransformDataCommand;
@@ -11,12 +9,10 @@ import me.linstar.illusion.item.IllusionCrystal;
 import me.linstar.illusion.item.IllusionItem;
 import me.linstar.illusion.item.MovementTool;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.SectionPos;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.ChunkPos;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.chunk.LevelChunk;
 import net.neoforged.bus.api.IEventBus;

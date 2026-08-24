@@ -10,7 +10,6 @@ import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.ChunkPos;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.chunk.LevelChunk;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
@@ -22,7 +21,7 @@ public class IllusionDataS2CPacket implements CustomPacketPayload {
 
     public static final StreamCodec<RegistryFriendlyByteBuf, IllusionDataS2CPacket> STREAM_CODEC = StreamCodec.of(
             (buf, packet) -> packet.writeTo(buf),
-            (buf) -> new IllusionDataS2CPacket(buf)
+            IllusionDataS2CPacket::new
     );
 
     private final BlockPos pos;

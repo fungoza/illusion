@@ -4,10 +4,10 @@
   "package": "me.linstar.illusion.client.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "ChunkBuilderMeshTaskMixin",
     "compat.sable.SubLevelContainerMixin"
   ],
   "client": [
+    "ChunkBuilderMeshTaskMixin",
     "BlockEntityRenderDispatcherMixin",
     "BlockStateBaseMixin",
     "SodiumBlockRendererMixin",

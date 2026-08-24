@@ -89,7 +89,7 @@ public class MovementTool extends Item implements IllusionItem {
     }
 
     @Override
-    public void appendHoverText(@NotNull ItemStack stack, Item.TooltipContext context, List<Component> components, @NotNull TooltipFlag flag) {
+    public void appendHoverText(@NotNull ItemStack stack, Item.@NotNull TooltipContext context, List<Component> components, @NotNull TooltipFlag flag) {
         components.add(Component.translatable("tooltip.illusion.movement_tool"));
     }
 }

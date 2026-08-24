@@ -23,7 +23,6 @@ import net.minecraft.world.level.chunk.LevelChunk;
 import net.neoforged.neoforge.network.PacketDistributor;
 import org.jetbrains.annotations.NotNull;
 
-import javax.annotation.Nullable;
 import java.util.List;
 
 public class BlockStateTool extends Item implements IllusionItem {
@@ -79,7 +78,7 @@ public class BlockStateTool extends Item implements IllusionItem {
     }
 
     @Override
-    public void appendHoverText(@NotNull ItemStack stack, Item.TooltipContext context, List<Component> components, @NotNull TooltipFlag flag) {
+    public void appendHoverText(@NotNull ItemStack stack, Item.@NotNull TooltipContext context, List<Component> components, @NotNull TooltipFlag flag) {
         components.add(Component.translatable("tooltip.illusion.block_state_tool"));
     }
 }
